@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIN LỖI LINHHH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #ff6f61;
+            font-size: 36px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .signature {
+            font-style: italic;
+            margin-top: 30px;
+            color: #555;
+            font-size: 20px;
+        }
+
+        .heart {
+            color: red;
+            font-size: 28px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #ff4f3b;
+        }
+
+        .thank-you-message {
+            display: none;
+            color: #4CAF50;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .thank-you-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>XIN LỖI LINHH</h1>
+    <p>
+        NLinh à, Đạt muốn gửi lời xin lỗi. Những gì đã xảy ra làm Đạt cảm thấy rất bùn và húi hận.
+        Đạt hy vọng Linh có thể tha thứ cho những gì Đạt đã làm và chúng ta có thể làm lại từ đầu.
+    </p>
+    <p class="heart">❤️</p>
+    <p class="signature">- Đạtt</p>
+    <a href="#" class="button" onclick="acceptApology()">Chấp nhận lời xin lỗi</a>
+</div>
+
+<div class="thank-you-container">
+    <p class="thank-you-message" id="thankYouMessage">Cảm ơn Linh đã chấp nhận lời xin lỗi! ❤️</p>
+</div>
+
+<script>
+    function acceptApology() {
+        // Ẩn phần "Chấp nhận lời xin lỗi"
+        document.querySelector('.container').style.display = 'none';
+        
+        // Hiển thị phần "Cảm ơn"
+        document.getElementById('thankYouMessage').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
